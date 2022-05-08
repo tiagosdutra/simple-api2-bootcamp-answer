@@ -16,17 +16,17 @@ function getFunction(){
     document.querySelector('img').src = data.sprites.front_default
     // document.querySelector('h3').innerText = data.explanation
 
-        fetch(`https://g.tenor.com/v1/search?q=${data.name}&key=6ODY42ZWIMUU&limit=8`)     
-        .then(res => res.json()) 
-        // parse response as JSON     
-        .then(data => {       
-        console.log(data)     
-        document.querySelector('.gifOne').src = data.results[0].media[0].gif.url
+        // fetch(`https://g.tenor.com/v1/search?q=${data.name}&key=6ODY42ZWIMUU&limit=8`)     
+        // .then(res => res.json()) 
+        // // parse response as JSON     
+        // .then(data => {       
+        // console.log(data)     
+        // document.querySelector('.gifOne').src = data.results[0].media[0].gif.url
 
-        })     
-        .catch(err => {         
-        console.log(`error ${err}`)     
-        }); 
+        // })     
+        // .catch(err => {         
+        // console.log(`error ${err}`)     
+        // }); 
     })     
     .catch(err => {         
     console.log(`error ${err}`)     
